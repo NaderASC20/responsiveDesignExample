@@ -10,6 +10,31 @@
     --accent:#B0D7FF;
 }
 
+@media(max-width: 1030px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer{
+        flex: 1 0 auto
+    }
+}
+
+@media(max-width: 530px) {
+    .card {
+        width: 80%;
+    }
+
+    .card img {
+        width: 80%;
+        height: initial;
+    }
+
+    h1 {
+        font-size: 10px;
+    }
+}
 body{
     margin:0;
     background-color:var(--primaryDark);
@@ -36,11 +61,6 @@ header p{
     font-size: 25px;
 }
 
-.card-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
 
 .card img{
     height:300px;
